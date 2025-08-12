@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя галерея</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #7D3C98;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #512DA8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Моя коллекция фотографий</h1>
+    <button onclick="showGallery()">Показать фотографии</button>
+
+    <script>
+        function showGallery() {
+            location.href = 'gallery.html'; // Переходим на страницу с галереей
+        }
+    </script>
+</body>
+</html>

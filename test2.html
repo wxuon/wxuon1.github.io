@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея фотографий</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #7D3C98;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #512DA8;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Галерея фотографий</h1>
+    <button onclick="showGallery()">Показать фотографии</button>
+
+    <div id="galleryContainer"></div>
+
+    <script>
+        function showGallery() {
+            let galleryDiv = document.getElementById('galleryContainer');
+            
+            // Список абсолютных URL ваших фотографий (меняйте их на реальные ссылки!)
+            let photoUrls = [
+                'https://drive.google.com/file/d/16m9NpGKunV_JZRetNRJqQg1ZSMuYsM-v/view?usp=sharing'
+                // Добавляйте столько фотографий, сколько вам нужно
+            ];
+
+            // Генерация элементов с изображениями
+            photoUrls.forEach((url) => {
+                let img = document.createElement('img');
+                img.src = url;
+                img.alt = 'Фотография';
+                galleryDiv.appendChild(img);
+            });
+        }
+    </script>
+</body>
+</html>
