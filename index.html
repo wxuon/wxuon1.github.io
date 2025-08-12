@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Photos Gallery</title>
+    <!-- Подключаем шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .container {
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #6b6a6a;
+        }
+        
+        button {
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin: 10px;
+            min-width: 120px;
+        }
+        
+        /* Цветовая палитра */
+        button:nth-child(1){background:#ffdab9;} /* January - персиковый оттенок */
+        button:nth-child(2){background:#ccffdd;} /* February - мятный зеленый */
+        button:nth-child(3){background:#ffe6cc;} /* March - светло-персиковый */
+        button:nth-child(4){background:#d9f2ee;} /* April - аквамариновый */
+        button:nth-child(5){background:#fff3cd;} /* May - бледно-желтый */
+        button:nth-child(6){background:#cce6ff;} /* June - голубой светлый */
+        button:nth-child(7){background:#e6ccff;} /* July - лавандовый фиолетовый */
+        button:nth-child(8){background:#ffccc9;} /* August - коралловый розовый */
+        button:nth-child(9){background:#ffffcc;} /* September - солнечно-желтый */
+        button:nth-child(10){background:#ccd9ff;} /* October - небесно-голубой */
+        button:nth-child(11){background:#ccccff;} /* November - сиреневый */
+        button:nth-child(12){background:#d1ffdb;} /* December - нежно-зеленый */
+        
+        /* Мобильная версия */
+        @media only screen and (max-width: 600px){
+            button {font-size: 14px; padding: 10px 20px;}
+            h1 {font-size: 1.5em;}
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Select a Month to View Photos</h1>
+    
+    <button onclick="window.open('https://disk.yandex.ru/d/15SNLtg056ru7w')">January</button>
+    <button onclick="window.open('https://disk.yandex.ru/d/your-february-link')">February</button>
+    <button onclick="window.open('https://disk.yandex.ru/d/your-march-link')">March</button>
+    <button onclick="window.open('https://disk.yandex.ru/d/your-april-link')">April</button>
+    <button onclick="window.open('https://disk.yandex.ru/d/your-may-link')">May</button>
+    <button onclick="window.open('https://disk.yandex.ru/d/your-june-link')">June</button>
+    <br><br>
+    <button onclick="window.open('https://disk.yandex.ru/d/your-july-link')">July</button>
+    <button onclick="window.open('https://disk.yandex.ru/d/your-august-link')">August</button>
+    <button onclick="window.open('https://disk.yandex.ru/d/your-september-link')">September</button>
+    <button onclick="window.open('https://disk.yandex.ru/d/your-october-link')">October</button>
+    <button onclick="window.open('https://disk.yandex.ru/d/your-november-link')">November</button>
+    <button onclick="window.open('https://disk.yandex.ru/d/your-december-link')">December</button>
+</div>
+</body>
+</html>
